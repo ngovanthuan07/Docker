@@ -69,3 +69,12 @@ docker run --rm -d `
 ```
 docker rm -f springboot-docker-container
 ```
+
+😜 Thiết lập cùng chung network
+```
+docker run -dp 8085:8083 `
+     --name springboot-docker-container `
+     -v "$(pwd):/app" `
+     --network springboot-app-network `
+     ngovanthuan07/springboot-docker:v1.0.0
+```
