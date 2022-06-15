@@ -19,3 +19,7 @@ docker tag  springboot-docker:latest springboot-docker:v1.0.0
 ```
 docker push ngovanthuan07/springboot-docker:v1.0.0
 ```
+
+```
+docker rm -f <image>
+```
