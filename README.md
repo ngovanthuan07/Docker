@@ -42,3 +42,18 @@ docker network create springboot-app-network
 ```
 docker network ls
 ```
+
+```
+
+docker run --rm -d `
+     -v mysql-springboot-data:/var/lib/mysql `
+     -v mysql-springboot-config-deamond:/etc/mysql/conf.d `
+     --name mysql-springboot-container `
+     -p 3310:3306 `
+     -e MYSQL_USER=thuan `
+     -e MYSQL_PASSWORD=12345678 `
+     -e MYSQL_ROOT_PASSWORD=12345678 `
+     -e MYSQL_DATABASE=doanphanmem1 `
+     --network springboot-app-network `
+     mysql:8.0.28
+```
