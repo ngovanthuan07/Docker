@@ -105,6 +105,7 @@ docker rm -f mysql-springboot-container springboot-docker-container
 ```
 docker-compose  -f docker-compose.dev.yml up --build
 ```
+😳 docker-compose
 ```
 version: '3.8'
 
