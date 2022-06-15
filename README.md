@@ -1,5 +1,10 @@
 # Docker
 # Làm việc với spring boot
+Xem toàn bộ container
+```
+docker ps -a
+```
+
 ```
 docker build -t springboot-docker . 
 ```
