@@ -92,7 +92,7 @@ use doanphanmem1;
 ```
 show tables;
 ```
-bây giờ thực hiện câu truy vấn như trong sql vd: select * from HocVan;
+🍗🍗🍗🍗🍗 Bây giờ thực hiện câu truy vấn như trong sql vd: select * from HocVan;
 
 🤔 Xem một container đang chạy
 ```
