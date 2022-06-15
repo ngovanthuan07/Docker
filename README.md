@@ -105,3 +105,39 @@ docker rm -f mysql-springboot-container springboot-docker-container
 ```
 docker-compose  -f docker-compose.dev.yml up --build
 ```
+```
+version: '3.8'
+
+services:
+  mysql-springboot-container:
+    image:  mysql:8.0.28
+    container_name: mysql-springboot-container
+    posts:
+      - 3310:3306
+    volumes:
+      - mysql-springboot-data:/var/lib/mysql
+      - mysql-springboot-config-deamond:/etc/mysql/conf.d
+    networks:
+      - backend
+    environment:
+      MYSQL_USER: thuan 
+      MYSQL_PASSWORD: 12345678 
+      MYSQL_ROOT_PASSWORD: 12345678 
+      MYSQL_DATABASE: doanphanmem1 
+  springboot-docker-container:
+    image: ngovanthuan07/springboot-docker:v1.0.0
+    container_name: springboot-docker-container
+    ports:
+      - 8085:8083
+    volumes:
+      - ./:/app
+    networks:
+      - backend
+#create network
+networks:
+  backend:
+    name: springboot-app-network
+volumes:
+  mysql-springboot-data:
+  mysql-springboot-config-deamond:
+```
