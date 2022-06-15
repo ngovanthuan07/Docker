@@ -42,9 +42,12 @@ docker network create springboot-app-network
 ```
 docker network ls
 ```
-
+Xem full option netwrork
+```
+docker network
 ```
 
+```
 docker run --rm -d `
      -v mysql-springboot-data:/var/lib/mysql `
      -v mysql-springboot-config-deamond:/etc/mysql/conf.d `
