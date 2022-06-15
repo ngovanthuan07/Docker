@@ -102,3 +102,6 @@ docker logs springboot-docker-container
 ```
 docker rm -f mysql-springboot-container springboot-docker-container
 ```
+```
+docker-compose  -f docker-compose.dev.yml up --build
+```
