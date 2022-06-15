@@ -23,3 +23,7 @@ docker push ngovanthuan07/springboot-docker:v1.0.0
 ```
 docker rmi -f <image>
 ```
+
+```
+docker run -dp 8085:8083 --name springboot-docker-container -v "$(pwd):/app" ngovanthuan07/springboot-docker:v1.0.0
+```
