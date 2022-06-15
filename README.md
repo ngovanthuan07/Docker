@@ -16,11 +16,11 @@ docker images
 ```
 docker image ls
 ```
-
+😆 Thay dổi tên 1 image
 ```
 docker tag  springboot-docker:latest springboot-docker:v1.0.0
 ```
-
+🐱‍👓 Liên kết với docker hub
 ```
 docker tag springboot-docker:v1.0.0 ngovanthuan07/springboot-docker:v1.0.0
 ```
@@ -28,7 +28,7 @@ docker tag springboot-docker:v1.0.0 ngovanthuan07/springboot-docker:v1.0.0
 ```
 docker push ngovanthuan07/springboot-docker:v1.0.0
 ```
-
+🙃 Xoá một image
 ```
 docker rmi -f <image>
 ```
@@ -36,18 +36,19 @@ docker rmi -f <image>
 ```
 docker run -dp 8085:8083 --name springboot-docker-container -v "$(pwd):/app" ngovanthuan07/springboot-docker:v1.0.0
 ```
+😫
 ```
 docker restart springboot-docker-container
 ```
-
+😁 Tạo một network
 ```
 docker network create springboot-app-network
 ```
-
+😍 Xem tất cả network
 ```
 docker network ls
 ```
-Xem full option netwrork
+🧐 Xem full option netwrork
 ```
 docker network
 ```
@@ -65,7 +66,7 @@ docker run --rm -d `
      --network springboot-app-network `
      mysql:8.0.28
 ```
-👏
+👏 Xoá một container
 ```
 docker rm -f springboot-docker-container
 ```
