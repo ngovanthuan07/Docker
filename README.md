@@ -1,6 +1,6 @@
 # Docker
 # Làm việc với spring boot
-Xem toàn bộ container
+🐱‍🚀 Xem toàn bộ container
 ```
 docker ps -a
 ```
@@ -32,7 +32,7 @@ docker push ngovanthuan07/springboot-docker:v1.0.0
 ```
 docker rmi -f <image>
 ```
-
+😉
 ```
 docker run -dp 8085:8083 --name springboot-docker-container -v "$(pwd):/app" ngovanthuan07/springboot-docker:v1.0.0
 ```
@@ -51,7 +51,7 @@ Xem full option netwrork
 ```
 docker network
 ```
-
+😸
 ```
 docker run --rm -d `
      -v mysql-springboot-data:/var/lib/mysql `
@@ -77,4 +77,11 @@ docker run -dp 8085:8083 `
      -v "$(pwd):/app" `
      --network springboot-app-network `
      ngovanthuan07/springboot-docker:v1.0.0
+```
+😀
+```
+docker exec -it mysql-springboot-container mysql -u root -p
+```
+```
+SHOW DATABASES;
 ```
