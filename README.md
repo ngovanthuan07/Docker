@@ -86,3 +86,8 @@ docker exec -it mysql-springboot-container mysql -u root -p
 ```
 SHOW DATABASES;
 ```
+
+🤔 Xem một container đang chạy
+```
+docker logs springboot-docker-container
+```
