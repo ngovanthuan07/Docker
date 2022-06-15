@@ -34,3 +34,11 @@ docker run -dp 8085:8083 --name springboot-docker-container -v "$(pwd):/app" ngo
 ```
 docker restart springboot-docker-container
 ```
+
+```
+docker network create springboot-app-network
+```
+
+```
+docker network ls
+```
