@@ -98,3 +98,7 @@ show tables;
 ```
 docker logs springboot-docker-container
 ```
+
+```
+docker rm -f mysql-springboot-container springboot-docker-container
+```
