@@ -86,6 +86,13 @@ docker exec -it mysql-springboot-container mysql -u root -p
 ```
 SHOW DATABASES;
 ```
+```
+use doanphanmem1;
+```
+```
+show tables;
+```
+bây giờ thực hiện câu truy vấn như trong sql vd: select * from HocVan;
 
 🤔 Xem một container đang chạy
 ```
