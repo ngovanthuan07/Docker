@@ -65,3 +65,7 @@ docker run --rm -d `
      --network springboot-app-network `
      mysql:8.0.28
 ```
+👏
+```
+docker rm -f springboot-docker-container
+```
